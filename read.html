@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 보기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .post {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .post-content {
+            font-size: 18px;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<?php include 'data.php'; ?>
+<div class="post">
+    <h1 class="post-title"><?php echo htmlspecialchars($title); ?></h1>
+    <div class="post-content">
+        <p><?php echo $contents;></p>
+    </div>
+    <a href="javascript:history.back()" class="back-link">목록으로 돌아가기</a>
+</div>
+
+</body>
+</html>

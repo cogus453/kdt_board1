@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Board</title>
+</head>
+<body>
+
+<h1>게시판 글쓰기</h1>
+
+<form action="write.php" method="POST">
+    <label for="title">제목:</label><br>
+    <input type="text"  name="title" required><br><br>
+
+    <label for="contents">내용:</label><br>
+    <textarea type="text" name="contents" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="등록">
+</form>
+
+</body>
+</html>
